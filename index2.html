@@ -3,9 +3,10 @@
   Chatbot.initFull({
     chatflowid: "5a62b101-a6cc-429e-a589-582ab719c8ca",
     apiHost: "http://localhost:3000",
-  });
-</script>
-<flowise-fullchatbot></flowise-fullchatbot>
+    chatflowConfig: {
+      // topK: 2
+    },
+  
 chatWindow: {
         welcomeMessage: "Bonjour! Comment puis-je vous aider?",
         backgroundColor: "#ffffff",
@@ -20,3 +21,6 @@ chatWindow: {
           avatarSrc:
             "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
         },
+  });
+</script>
+<flowise-fullchatbot></flowise-fullchatbot>
