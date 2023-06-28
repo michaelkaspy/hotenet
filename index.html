@@ -1,21 +1,20 @@
-
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js"
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js";
     Chatbot.initFull({
         chatflowid: "5a62b101-a6cc-429e-a589-582ab719c8ca",
         apiHost: "http://localhost:3000",
         chatflowConfig: {
-      // topK: 2
-    },
-      chatWindow: {
-        welcomeMessage: "Bonjour! Comment puis-je vous aider?",
-        backgroundColor: "#ffffff",
-        height: 700,
-        width: 400,
-        fontSize: 16,
-        poweredByTextColor: "#ffffff",
+            // topK: 2
         },
-    })
+        chatWindow: {
+            welcomeText: "Bonjour! Comment puis-je vous aider?",
+            backgroundColor: "#ffffff",
+            height: 700,
+            width: 400,
+            fontSize: 16,
+            poweredByTextColor: "#ffffff",
+        },
+    });
 </script>
 <flowise-fullchatbot></flowise-fullchatbot>
 
